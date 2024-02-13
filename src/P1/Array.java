@@ -2,7 +2,7 @@ package P1;
 
 import java.util.Scanner;
 
-public class MenghitungIPS {
+public class Array {
     public static void KonversiNilai(String MK, double nilaiAngka) {
         String nilaiHuruf;
         double bobotNilai;

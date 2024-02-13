@@ -2,7 +2,7 @@ package P1;
 
 import java .util.Scanner;
 
-public class DeretanBilangan {
+public class Perulangan {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
