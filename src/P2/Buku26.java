@@ -35,6 +35,18 @@ public class Buku26 {
     void gantiHarga(int hrg) {
         harga = hrg;
     }
+
+    public Buku26(String jud, String pg, int hal, int stok, int har) {
+        judul = jud;
+        pengarang = pg;
+        halaman = hal;
+        this.stok = stok;
+        harga = har;
+    }
+
+    public Buku26() {
+        //TODO Auto-generated constructor stub
+    }
     
     
 }

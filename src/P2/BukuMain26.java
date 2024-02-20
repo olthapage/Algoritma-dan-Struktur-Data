@@ -7,7 +7,6 @@ public class BukuMain26 {
         int halaman, stok, harga;
 
         Buku26 bk1 =  new Buku26();
-
         bk1.judul = "Today Ends Tomorrw Comes";
         bk1.pengarang = "Denanda Pratiwi";
         bk1.halaman = 198;
@@ -17,8 +16,13 @@ public class BukuMain26 {
         bk1.tampilInformasi();
         bk1.terjual(5);
         bk1.gantiHarga(60000);
-        bk1.tampilInformasi();      
+        bk1.tampilInformasi();  
+        
+        Buku26 bk2 = new Buku26("Self Reward", "Maheera Ayesha", 160, 29, 59000);
+        bk2.terjual(11);
+        bk2. tampilInformasi();
     }
+
     
     
 }
