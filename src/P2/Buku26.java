@@ -44,9 +44,7 @@ public class Buku26 {
         harga = har;
     }
 
-    public Buku26() {
-        //TODO Auto-generated constructor stub
-    }
+    
     
     
 }
