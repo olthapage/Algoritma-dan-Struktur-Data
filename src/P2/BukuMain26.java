@@ -21,6 +21,10 @@ public class BukuMain26 {
         Buku26 bk2 = new Buku26("Self Reward", "Maheera Ayesha", 160, 29, 59000);
         bk2.terjual(11);
         bk2. tampilInformasi();
+
+        Buku26 bukuOltha = new Buku26("Hemat Pangkal Kaya", "Oltha Rosyeda", 200, 15, 99000);
+        bukuOltha.tampilInformasi();
+        bukuOltha.terjual(7);
     }
 
     

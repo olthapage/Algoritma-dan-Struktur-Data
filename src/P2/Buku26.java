@@ -44,7 +44,18 @@ public class Buku26 {
         harga = har;
     }
 
-    
+    public Buku26() {
+        //TODO Auto-generated constructor stub
+    }
+
+    public void bukuOltha(String jud, String pg, int hal, int stok, int har) {
+        this.judul = jud;
+        this.pengarang = pg;
+        this.halaman = hal;
+        this.stok = stok;
+        this.harga = har;
+
+    }
     
     
 }
