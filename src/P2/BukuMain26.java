@@ -22,7 +22,7 @@ public class BukuMain26 {
         bk2.terjual(11);
         bk2. tampilInformasi();
 
-        Buku26 bukuOltha = new Buku26("Hemat Pangkal Kaya", "Oltha Rosyeda", 200, 15, 99000);
+        Buku26 bukuOltha = new Buku26("Hujan", "Tere Liye",320, 15, 126000);
         bukuOltha.tampilInformasi();
         bukuOltha.terjual(7);
     }
