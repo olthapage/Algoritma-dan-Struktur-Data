@@ -17,18 +17,17 @@ public class InformasiMahasiswa {
         //TODO Auto-generated constructor stub
     }
 
-    public double IPKTerbesar(Object[] mhArray) {
-        double ipkTerbesar = ((InformasiMahasiswa) mhArray[0]).ipk;
+    public static double IPKTerbesar(InformasiMahasiswa[] mhArray) {
+        double ipkTerbesar = mhArray[0].ipk;
         for (int i = 1; i < mhArray.length; i++) {
-            if (((InformasiMahasiswa) mhArray[i]).ipk > ipkTerbesar) {
-                ipkTerbesar = ((InformasiMahasiswa) mhArray[i]).ipk;
-                
+            if (mhArray[i].ipk > ipkTerbesar) {
+                ipkTerbesar = mhArray[i].ipk;
             }
         }
         return ipkTerbesar;
     }
 
-    public double rataRataIPK(InformasiMahasiswa[] mhArray) {
+    public static double rataRataIPK(InformasiMahasiswa[] mhArray) {
         double totalIPK = 0;
         for (int i = 0; i < mhArray.length; i++) {
             totalIPK += mhArray[i].ipk;
