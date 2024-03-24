@@ -12,8 +12,8 @@ public class MainFaktorial {
         Faktorial[] fk = new Faktorial[ijml];
         for (int i = 0; i < ijml; i++) {  
             System.out.println("masukkan nilai data ke-" +(i+1)+":"); 
-            int iNilai = sc.nextInt(); 
-            fk[i] = new Faktorial(iNilai);      
+            int nilai = sc.nextInt(); 
+            fk[i] = new Faktorial(nilai);      
         }
 
         System.out.println("Hasil - BRUTE FORCE");
@@ -23,7 +23,7 @@ public class MainFaktorial {
 
         System.out.println("HASIL - DIVIDE AND CONQUER");
         for (int i = 0; i < ijml; i++) {
-            System.out.println("Hasil penghitungan faktorial menggunakan Divide and Conquer adalah " + fk[i].faktorialDC((int)fk[i].nilai));
+            System.out.println("Hasil penghitungan faktorial menggunakan Divide and Conquer adalah " + fk[i].faktorialDCRekursif((int)fk[i].nilai));
         }
     }
     

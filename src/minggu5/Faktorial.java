@@ -3,8 +3,8 @@ package minggu5;
 public class Faktorial {
     double nilai;
 
-    public Faktorial(double n) {
-        this.nilai = n;
+    public Faktorial(double nilai) {
+        this.nilai = nilai;
     }
 
     public Faktorial() {
@@ -19,12 +19,15 @@ public class Faktorial {
         return fakto;
     }
 
-    int faktorialDC(int n) {
-        if(n==0 || n==1) {
+    int faktorialDC() {
+        return faktorialDCRekursif((int)nilai);
+    }
+
+    int faktorialDCRekursif(int n) {
+        if (n == 0 || n == 1) {
             return 1;
         } else {
-            int fakto = n * faktorialDC(n-1);
-            return fakto;
+            return n * faktorialDCRekursif(n - 1);
         }
     }
 }
