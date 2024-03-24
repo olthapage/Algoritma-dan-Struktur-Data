@@ -19,15 +19,13 @@ public class Faktorial {
         return fakto;
     }
 
-    int faktorialDC() {
-        return faktorialDCRekursif((int)nilai);
-    }
 
-    int faktorialDCRekursif(int n) {
-        if (n == 0 || n == 1) {
+    int faktorialDC(int n) {
+        if(n==0 || n==1) {
             return 1;
         } else {
-            return n * faktorialDCRekursif(n - 1);
+            int fakto = n * faktorialDC(n-1);
+            return fakto;
         }
     }
 }
