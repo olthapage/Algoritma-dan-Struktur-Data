@@ -1,4 +1,4 @@
-package jobsheet6;
+package jobsheet5;
 
 public class DaftarMahasiswaBerprestasi {
     Mahasiswa listMhs[] = new Mahasiswa[5];
