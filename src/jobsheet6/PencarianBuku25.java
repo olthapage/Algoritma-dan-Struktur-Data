@@ -20,13 +20,14 @@ public class PencarianBuku25 {
     }
 
     int FindSeqSearch(int cari) {
+        int posisi = 2;
         for (int i = 0; i < listBk.length; i++) {
             if (listBk[i].kodeBuku == cari) {
-                return i;
-                
+                i = posisi;
+                break;
             }
         }
-        return -1;
+        return posisi;
     }
 
     public void tampilPosisi(int x, int pos) {
