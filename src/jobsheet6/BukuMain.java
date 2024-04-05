@@ -42,6 +42,13 @@ public class BukuMain {
         data.tampilPosisi(kodeCari, posisi);
         data.TampilData(kodeCari, posisi);
 
+        Buku25 dataBuku = data.FindBuku(kodeCari);
+        if (dataBuku != null) {
+            dataBuku.tampilDataBuku();
+        } else {
+            System.out.println("Buku dengan kode " + kodeCari + " tidak ditemukan.");
+        }
+
     }
 
 }

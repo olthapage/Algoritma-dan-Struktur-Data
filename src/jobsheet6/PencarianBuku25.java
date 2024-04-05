@@ -51,4 +51,17 @@ public class PencarianBuku25 {
 
     }
 
+    public Buku25 FindBuku(int cari){
+        for (int i = 0; i < listBk.length; i++) {
+            if (listBk[i].kodeBuku == cari){
+                return listBk[i];
+            }
+        }
+        return null;
+    }
+
+    
+
+
+
 }
