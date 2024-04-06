@@ -49,6 +49,12 @@ public class BukuMain {
             System.out.println("Buku dengan kode " + kodeCari + " tidak ditemukan.");
         }
 
+        System.out.println("=====================================");
+        System.out.println("Menggunakan binary Search");
+        posisi = data.FindBinarySearch(kodeCari, 0, jumBuku - 1);
+        data.tampilPosisi(kodeCari, posisi);
+        data.TampilData(kodeCari, posisi);
+
     }
 
 }
