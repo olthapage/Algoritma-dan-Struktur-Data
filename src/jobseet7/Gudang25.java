@@ -34,9 +34,10 @@ public class Gudang25 {
             Barang25 delete = tumpukan[top];
             top--;
             System.out.println("Barang " + delete.nama + " diambil dari Gudang.");
+            System.out.println("Kode unik dalam binner: " + konversiDesimalKeBinner(delete.kode)); // Memanggil konversiDesimalKeBinner() langsung dari kelas Gudang25
             return delete;
         } else {
-            System.out.println("Tumpukan barang kosong.");
+            System.out.println("Tumpukkan barang kosong.");
             return null;
         }
     }
@@ -61,5 +62,19 @@ public class Gudang25 {
         } else {
             System.out.println("Tumpukan barang kosong.");
         }
+    }
+
+    public String konversiDesimalKeBinner(int kode) {
+        StackKonversi25 stack = new StackKonversi25(); // Inisialisasi objek StackKonversi25
+        while (kode > 0) {
+            int sisa = kode % 2;
+            stack.push(sisa);
+            kode = kode / 2;
+        }
+        String binner = new String();
+        while (!stack.isEmpty()) {
+            binner += stack.pop();
+        }
+        return binner;
     }
 }
