@@ -68,11 +68,12 @@ public class Queue25 {
             size++;
         } else {
             System.out.println("Queue sudah penuh");
+            System.exit(0); 
         }
     }
     public int Dequeue() {
         int dt = 0;
-        if (IsEmpty()) {
+        if (!IsEmpty()) {
             dt = data[front];
             size--;
             if (size == 0) {
@@ -82,6 +83,7 @@ public class Queue25 {
             }
         } else {
             System.out.println("Queue masih kosong");
+            System.exit(0); 
         }
         return dt;
     }
