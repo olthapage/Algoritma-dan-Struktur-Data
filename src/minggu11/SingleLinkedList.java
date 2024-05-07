@@ -134,28 +134,26 @@ public class SingleLinkedList {
 
     void remove(int key) {
         if (isEmpty()) {
-            System.out.println("Linked list masih kosong, tidak dapat dihapus");
+            System.out.println("Linked list masih kosong," + "tidak dapat dihapus");
         } else {
-            if (head.data == key) {
-                removeFirst();
-                return;
-            }
             Node temp = head;
-            while (temp.next != null && temp.next.data != key) {
+            while (temp != null) {
+                if (temp.data != key && temp == head) {
+                    removeFirst();
+                    break;
+                }  else if (temp.next.data == key) {
+                    temp.next = temp.next.next;
+                    if (temp.next == null) {
+                        tail = temp;
+                    } 
+                    break;
+                } 
                 temp = temp.next;
-            }
-            if (temp.next != null) {
-                temp.next = temp.next.next;
-                if (temp.next == null) {
-                    tail = temp;
-                }
-            } else {
-                System.out.println("Elemen tidak ditemukan");
             }
         }
     }
 
-    void removeAt(int index) {
+    public void removeAt(int index) {
         if (index < 0) {
             System.out.println("Indeks tidak valid");
             return;
