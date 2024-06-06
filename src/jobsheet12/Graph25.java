@@ -2,7 +2,7 @@ package jobsheet12;
 
 public class Graph25 {
     int vertex;
-    DoubleLinkedList25 list[];
+    DoubleLinkedList25[] list;
 
     public Graph25(int v) {
         vertex = v;
@@ -59,5 +59,14 @@ public class Graph25 {
                 System.out.println("");
             }
         }
+    }
+
+    public boolean hasEdge(int asal, int tujuan) throws Exception {
+        for (int i = 0; i < list[asal].size(); i++) {
+            if (list[asal].get(i) == tujuan) {
+                return true;
+            }
+        }
+        return false;
     }
 }
